@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-gn&2x17lla3)f_h!ho!=f7cj@ew-k$jyh%+#iap!hri_**8n$a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'RENDER' not in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = ["https://climalk.onrender.com/", "http://127.0.0.1:8000", "127.0.0.1:8000",  '127.0.0.1']
 
