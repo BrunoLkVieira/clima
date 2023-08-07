@@ -1,0 +1,72 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link href="{% static 'css/index.css'%}" rel="stylesheet"/>
+
+</head>
+<body>
+
+    <section class="main">
+
+
+
+        <div class="clima">
+            <img src="{% static 'images/icons8-local-96.png' %}">
+            <form method="get" action="#" class="pesquisa" >
+                <input type="text" name="query" placeholder="Cidade ">
+            </form>
+
+            {% if temperatura %}
+
+            <div class="box-clima">
+
+                <div class="weather">
+                    <p> {{cidade}}</p>
+                    {% if descricao_clima == "céu limpo" %}
+                        <img src="{% static 'images/clear.png'%}" alt="">
+                    {% endif %}
+
+                    {% if descricao_clima == "nublado" or descricao_clima == "nuvens dispersas" or descricao_clima == "chuva leve" or descricao_clima == "algumas nuvens" or descricao_clima == "névoa" %}
+                        <img src="{% static 'images/nublado.png'%}" alt="">
+                    {% endif %}
+
+                    <h1>{{temperatura}}°</h1>
+                    <h2>{{descricao_clima}}</h2>
+               </div>
+
+               <div class="humidity-wind">
+                    <div class="humidity">
+                            <div class="logo">
+                                <img src="{% static 'images/icons8-umidade-64.png'%}" alt="">
+                            </div>
+                            <div class="dados">
+                                <h3>{{umidade}}</h3>
+                                <p>umidade</p>
+                            </div>
+                    </div>
+
+                    <div class="wind">
+                            <div class="logo">
+                                <img src="{% static 'images/icons8-ar-48.png' %}" alt="">
+                            </div>
+                            <div class="dados">
+                                <h3>{{vento}} </h3>
+                                <p>Rajadas de Vento</p>
+                            </div>
+                    </div>
+
+               </div>
+            </div>
+            {% endif %}
+        </div>
+
+    </section>
+
+</body>
+
+</html>
