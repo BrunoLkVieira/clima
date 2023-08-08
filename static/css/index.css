@@ -73,9 +73,9 @@
 .dados h3{font-size: 32px;}
 .dados p {font-size: 20px;}
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 2000px){
 
-    .weather img{width: 200px; margin-top:20px}
+    .weather img{width: 150px; margin-top:20px}
     .weather h1{font-size: 64px;margin-top:20px;}
     .weather h2{font-size: 30px;}
 
@@ -84,19 +84,9 @@
     .dados p {font-size: 18px;}
 }
 
-@media screen and (max-width: 750px){
-
-    .clima{width: 95%;}
-    .weather img{width: 200px; margin-top:20px}
-    .weather h1{font-size: 64px;margin-top:20px;}
-    .weather h2{font-size: 30px;}
-
-    .dados{display: block;}
-    .dados h3{font-size: 25px;}
-    .dados p {font-size: 18px;}
-}
 
 @media screen and (max-width: 750px){
+
     .main{ justify-content: center; justify-items: center; display:flex;}
     .clima{
         padding: 20px;
@@ -112,9 +102,6 @@
     .logo img{width: 35px;}
     .pesquisa{
         width:75%;
-    }
-    .pesquisa input{
-        width:100%;
     }
 }
 
