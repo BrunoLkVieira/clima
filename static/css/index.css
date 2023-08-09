@@ -87,7 +87,11 @@
 
 @media screen and (max-width: 750px){
 
-    .main{ justify-content: center; justify-items: center; display:flex;}
+    .main{
+        justify-content: center;
+        justify-items: center;
+        display:flex;
+    }
     .clima{
         padding: 20px;
 
